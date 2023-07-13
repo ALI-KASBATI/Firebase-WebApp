@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  body {
+    background-color: #18171F;
+    color: #E6E5EA;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding: 24px;
+    color: #E6E5EA;
+  }
+  
+  span {
+    color: orangered;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+    row-gap: 16px;
+    background-color: #24232C;
+    border-radius: 16px;
+  }
+  
+  legend {
+    font-size: 24px;
+    padding: 12px;
+    color: #E6E5EA;
+  }
+  
+  .sub {
+    text-align: left;
+    width: 100%;
+    color: #E6E5EA;
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid orangered;
+    background-color: #E6E5EA;
+    color: #18171F;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: #AAA;
+  }
+  
+  .input:focus {
+    border-color: #FF5722;
+    box-shadow: 0 0 0 2px #FF5722;
+  }
+  
+  .button {
+    background-color: orangered;
+    color: #E6E5EA;
+    width: 90%;
+    height: 40px;
+    border: 0px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 16px;
+  }
+  
+  .button:active {
+    background-color: #FF5722;
+  }
+  
+  .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    padding: 24px;
+    column-gap: 16px;
+    row-gap: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 600px;
+  }
+  
+  /* New styles */
+  .column {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #24232C;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 2px solid orangered;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .pink {
+    color: orangered;
+    margin-bottom: 8px;
+  }
+  
+  .row-left {
+    text-align: left;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .para-row {
+    justify-content: space-between;
+    color: orangered;
+  }
+  
+  .buttons {
+    margin-left: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #E6E5EA;
+  }
+  
+  /* Additional styles */
+  header h1 {
+    color: orangered;
+  }
+  
+  footer {
+    border-top: 2px solid orangered;
+    padding-top: 24px;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 768px) {
+    .column {
+      flex-basis: calc(50% - 16px);
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .column {
+      flex-basis: calc(33.33% - 16px);
+    }
+  }
+  
